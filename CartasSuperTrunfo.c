@@ -35,6 +35,10 @@ int main() {
     printf("Qual o numero de pontos turisticos da cidade? \n");
     scanf("%d", &nPontosTurist);
 
+    //declarando e inicializando variaveis de densidade populacional e pib percapita
+    int denpopu = populacao /area;
+    long int pibpercapita = pib / populacao;
+
     //imprimindo dados armazenados
     printf("Muito bem voce cadastrou uma nova carta!\n");
     printf("Codigo da carta: %c0%d\n", estado, cidade);
@@ -43,6 +47,8 @@ int main() {
     printf("Area: %lu\n", area);
     printf("PIB: %lld\n", pib);
     printf("Numero de pontos turisticos: %d\n", nPontosTurist);
+    printf("Densidade populacional: %d\n", denpopu);
+    printf("PIB Percapita: %ld\n", pibpercapita);
 
     return 0;
 }

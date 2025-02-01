@@ -9,7 +9,7 @@ int main() {
     char nome[50];
     char estado;
     
-    
+    //iniciando as apresentacoes
     printf("SUPER TRUNFO - Paises!\n");
     //solicitando dados
     printf("Vamos comecar cadastrando as cartas. Forneça as informações solicitadas abaixo:\n");

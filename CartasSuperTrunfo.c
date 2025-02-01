@@ -5,12 +5,10 @@ int main() {
     //declarando variaveis
     int cidade, nPontosTurist;
     unsigned long int populacao, area;
-    float pib;
+    long long int pib;
     char nome[50];
     char estado;
-    float denpopu;
-    float pibpercapita;
-
+    
     
     printf("SUPER TRUNFO - Paises!\n");
     //solicitando dados
@@ -37,20 +35,20 @@ int main() {
     printf("Qual o numero de pontos turisticos da cidade? \n");
     scanf("%d", &nPontosTurist);
 
-    denpopu = (float)populacao / area;
-    pibpercapita = (float)pib / populacao;
-    
+    //declarando e inicializando variaveis de densidade populacional e pib percapita
+    int denpopu = populacao /area;
+    long int pibpercapita = pib / populacao;
+
     //imprimindo dados armazenados
     printf("Muito bem voce cadastrou uma nova carta!\n");
     printf("Codigo da carta: %c0%d\n", estado, cidade);
     printf("Nome: %s\n", nome);
     printf("Populacao: %lu\n", populacao);
     printf("Area: %lu\n", area);
-    printf("PIB: %.2f\n", pib);
+    printf("PIB: %lld\n", pib);
     printf("Numero de pontos turisticos: %d\n", nPontosTurist);
     printf("Densidade populacional: %d\n", denpopu);
-    printf("PIB Percapita: %.2f\n", pibpercapita);
-    
+    printf("PIB Percapita: %ld\n", pibpercapita);
 
     return 0;
 }
